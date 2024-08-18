@@ -1,8 +1,8 @@
 @extends('layout.base')
 
 @section('content')
-<body class="edit-user">
-    <div>
+<body class="dam">
+    <div  class="category-form dan">
         <h1 class="text-center">Edit User</h1>
 
         <form action="{{ route('user.update', $user->id) }}" method="POST">

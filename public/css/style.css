@@ -381,10 +381,15 @@ select:focus {
 }
 
 .damaz-couleur{
-    background-color: #d30808;
-    color: white;
+    background-color: #f7c5c7;
+    color: #a70606;
     border-radius: 3px;
     outline: none;
+    width: 80px;
+    text-align: center;
+    margin-left: 80px;
+    text-align: right;
+    /* justify-content: center; */
 }
 
 .btn-deconnect-deconnect{
@@ -403,7 +408,11 @@ select:focus {
     height: 1000px;
     align-items: center;
     text-align: center;
-    mar
+    
+}
+
+.table{
+    margin-top: 30px;
 }
 
 @font-face {

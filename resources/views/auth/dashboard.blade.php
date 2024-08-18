@@ -26,12 +26,12 @@
                     <tr>
                         <td>{{ $user->name }}</td>
                         <td>{{ $user->email }}</td>
-                        <td>
-                            <a href="{{ route('user.edit', $user->id) }}" class="btn btn-primary ">Edit</a>
+                        <td >
+                            <a href="{{ route('user.edit', $user->id) }}" class="button w-100 primary"  >Edit</a>
                             <form action="{{ route('user.destroy', $user->id) }}" method="POST" style="display:inline;">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="damaz-couleur">Delete</button>
+                                <button type="submit" class="button w-50 error" >Delete</button>
                             </form>
                         </td>
                     </tr>

@@ -34,13 +34,14 @@
                     <label for="password">Password</label>
                     <input type="password" class="form-control" id="password" name="password"> --}}
 
-                    <a href="{{ route('auth.dashboard')}}">Dashboard</a>
+                   
                     
                 {{-- </div> --}}
 
                 
 
-                <button class="button w-100 primary">Register</button>
+                <button class="button w-100 primary">Register</button><br/><br>
+                <a href="{{ route('auth.dashboard')}}">Back to Dashboard</a>
             </form>
         </div>
     </div>

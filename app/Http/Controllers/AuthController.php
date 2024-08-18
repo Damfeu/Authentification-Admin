@@ -57,61 +57,7 @@ class AuthController extends Controller
         ])->withInput($request->only('email'));
     }
 
-    // public function login(LoginAdminRequest $request)
-    // {
-
-    //     $credentials = $request->only('email', 'password');
-
-        
-    //     try {
-    //         if (Auth::attempt($credentials)) {
-    //             return redirect()->route('auth.dashboard');
-
-                
-    //         } else {
-    //             return back()->with('error', "Email or password incorrect.");
-    //         }
-
-
-    //     } catch (\Exception $ex) {
-            
-    //         return back()->with('error', 'An error occurred during processing. Please try again!');
-    //     }
-    //   }
-    
-    /**
-     * Store a newly created resource in storage.
-     */
-
-
-    //  public function register(Request $request)
-    //  {
-    //      $request->validate([
-    //          "name" => "required|string|max:255",
-    //          "email" => "required|string|email|max:255|unique:users,email",
-    //          "password" => "nullable|string|min:8|confirmed", // Mot de passe optionnel
-    //      ]);
-
-    //      $user = new User;
-    //      $user->name = $request->name;
-    //      $user->email = $request->email;
-
-    //      if ($request->filled('password')) {
-
-    //          $user->password = Hash::make($request->password);
-    //      } else {
-    //          // Si aucun mot de passe n'est fourni, définir un mot de passe par défaut ou le laisser vide.
-    //          $user->password = Hash::make('default_password'); // Exemple de mot de passe par défaut
-    //      }
-
-    //      if ($user->save()) {
-    //         Mail::to($request->email)->send(new AccountMail($request->password));
-    //          return redirect()->route('auth.dashboard')->with("success", "User successfully registered");
-    //      } else {
-    //          return back()->with("error", "Registration failed!");
-    //      }
-    //  }
-
+  
 
     public function register(Request $request)
     {
